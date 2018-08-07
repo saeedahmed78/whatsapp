@@ -1,19 +1,27 @@
-body{
+body,html{
 	margin: 0px;
+	width: 100%;
+	height: 100%;
 }
 .contacts{
+	padding-top: 0px;
+	padding-bottom:  0px;
+	padding-right: 10px;
+	padding-left: 10px;
+
 	height: 100px;
-	width: 100%;
+	width: 94%;
 	display: flex;
 	justify-content: space-between;
+	border-bottom: 1px solid #b5b3b3;
 	/*border: 1px solid black;*/
 
 }
 
 #contact-list{
-	
+	/*padding-right: 12px;*/
 	flex-direction: column;
-	height: 100vh;
+	height: 95vh;
 	width: 40%;
 	overflow-y: scroll;
 	background-color: #e7e7e7;
@@ -24,7 +32,10 @@ body{
 }
 
 #oneContact{
-	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 95vh;
 	width: 100%;
 	border: 1px solid black;
 }
@@ -49,6 +60,7 @@ article{
 	border: 1px solid black;
 	border-radius: 35px;
 	margin-right: 10px;
+	min-width: 45px;
 }
 .namePro{
 	display: flex;
@@ -63,5 +75,22 @@ article{
 	text-overflow: ellipsis;
 	word-break: break-all;
 }
+.before-click-div{
+	text-align: center;
+	align-items: center;
+	color: #808080;
 
+}
+.fa-user-circle{
 
+	font-size: 5em;
+}
+.fa-phone{
+	margin-right: 10px;
+	color: green;
+}
+.fa-envelope{
+	margin-right: 10px;
+	color: red;
+
+}
